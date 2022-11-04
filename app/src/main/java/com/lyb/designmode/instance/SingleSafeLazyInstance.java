@@ -1,4 +1,4 @@
-package com.lyb.designmode;
+package com.lyb.designmode.instance;
 
 /**
  * 双重校验安全的懒汉模式

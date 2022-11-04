@@ -1,4 +1,4 @@
-package com.lyb.designmode;
+package com.lyb.designmode.instance;
 
 /**
  * 不是线程安全的懒汉模式
