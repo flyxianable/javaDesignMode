@@ -1,6 +1,6 @@
 package com.lyb.designmode.factory.compose;
 
-public class Demo {
+public class ComposeDemo {
 
     /**
      * 实例化

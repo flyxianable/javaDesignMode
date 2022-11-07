@@ -6,11 +6,11 @@ package com.lyb.designmode.factory.simple_factory_pattern;
 public class CylinderShape implements Shape{
 
     public CylinderShape() {
-        System.out.println("shap : draw a cylinder");
+        System.out.println("shape : draw a cylinder");
     }
 
     @Override
     public void draw() {
-        System.out.println("shap : draw a cylinder");
+        System.out.println("shape : draw a cylinder");
     }
 }

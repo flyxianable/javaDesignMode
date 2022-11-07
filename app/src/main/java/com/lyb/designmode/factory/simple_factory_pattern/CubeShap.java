@@ -5,11 +5,11 @@ package com.lyb.designmode.factory.simple_factory_pattern;
  */
 public class CubeShap implements Shape{
     public CubeShap() {
-        System.out.println("shap : create a cube");
+        System.out.println("shape : create a cube");
     }
 
     @Override
     public void draw() {
-        System.out.println("shap : draw a cube");
+        System.out.println("shape : draw a cube");
     }
 }
