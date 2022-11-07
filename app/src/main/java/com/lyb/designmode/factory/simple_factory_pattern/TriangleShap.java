@@ -1,4 +1,4 @@
-package com.lyb.designmode.factory.simple;
+package com.lyb.designmode.factory.simple_factory_pattern;
 
 public class TriangleShap implements Shape{
 

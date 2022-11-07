@@ -1,9 +1,10 @@
-package com.lyb.designmode.factory.simple;
+package com.lyb.designmode.factory.simple_factory_pattern;
 
 /**
  * 简单工厂模式
  */
-public class ShapeFactory {
+public class SimpleShapeFactory {
+
     public static Shape buildShape(String type){
         Shape shape = null;
         switch (type){
