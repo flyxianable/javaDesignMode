@@ -8,6 +8,9 @@ import android.util.Log;
 import com.lyb.designmode.factory.abstract_factory_pattern.AbstractFactory;
 import com.lyb.designmode.factory.abstract_factory_pattern.FlatColorfulShape;
 import com.lyb.designmode.factory.abstract_factory_pattern.ThredDimenColorfulShape;
+import com.lyb.designmode.factory.compose.SafeComponent;
+import com.lyb.designmode.factory.compose.SafeLeaf;
+import com.lyb.designmode.factory.compose.SafeNode;
 import com.lyb.designmode.factory.factory_method_pattern.RectFactory;
 import com.lyb.designmode.factory.simple_factory_pattern.CircleShap;
 import com.lyb.designmode.factory.simple_factory_pattern.Shape;
@@ -49,6 +52,19 @@ public class MainActivity extends AppCompatActivity {
         flatColorfulShape.buildShape("rect");
         thredDimenColorfulShape.buildColor("red");
         thredDimenColorfulShape.buildShape("cylinder");
+
+        //组合模式
+        SafeComponent root = new SafeNode("xx公司");
+        SafeComponent hr = new SafeNode("人资部");
+        SafeComponent software = new SafeNode("软件部");
+
+        SafeComponent android = new SafeLeaf("android");
+        SafeComponent ios = new SafeLeaf("ios");
+
+        ((SafeNode)root).addChild(hr);
+        ((SafeNode)root).addChild(software);
+        ((SafeNode)software).addChild(android);
+        ((SafeNode)software).addChild(ios);
     }
 
     class LazyThread extends Thread{
