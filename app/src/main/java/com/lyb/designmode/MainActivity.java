@@ -5,18 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.lyb.designmode.factory.abstract_factory_pattern.AbstractFactory;
-import com.lyb.designmode.factory.abstract_factory_pattern.FlatColorfulShape;
-import com.lyb.designmode.factory.abstract_factory_pattern.ThredDimenColorfulShape;
-import com.lyb.designmode.factory.compose.SafeComponent;
-import com.lyb.designmode.factory.compose.SafeLeaf;
-import com.lyb.designmode.factory.compose.SafeNode;
-import com.lyb.designmode.factory.decorate.DecorateDemo;
-import com.lyb.designmode.factory.factory_method_pattern.RectFactory;
-import com.lyb.designmode.factory.simple_factory_pattern.CircleShap;
-import com.lyb.designmode.factory.simple_factory_pattern.Shape;
-import com.lyb.designmode.factory.simple_factory_pattern.SimpleShapeFactory;
-import com.lyb.designmode.instance.SingleLazyInstance;
+import com.lyb.designmode.decorate.DecorateDemo;
+import com.lyb.designmode.facade.FacadeDemo;
+import com.lyb.designmode.proxy.dynamic.DynamicProxyDemo;
+import com.lyb.designmode.proxy.static_proxy.StaticProxyDemo;
+import com.lyb.designmode.single_instance.SingleLazyInstance;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,7 +47,13 @@ public class MainActivity extends AppCompatActivity {
 //        thredDimenColorfulShape.buildColor("red");
 //        thredDimenColorfulShape.buildShape("cylinder");
 
-        new DecorateDemo().create();
+//        new DecorateDemo().create();
+
+//        new FacadeDemo().make();
+
+//        new StaticProxyDemo().treat();
+
+        new DynamicProxyDemo().treat();
     }
 
     class LazyThread extends Thread{
