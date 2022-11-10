@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.lyb.designmode.decorate.DecorateDemo;
 import com.lyb.designmode.facade.FacadeDemo;
+import com.lyb.designmode.observer.ObserverDemo;
 import com.lyb.designmode.proxy.dynamic.DynamicProxyDemo;
 import com.lyb.designmode.proxy.static_proxy.StaticProxyDemo;
 import com.lyb.designmode.single_instance.SingleLazyInstance;
@@ -53,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
 //        new StaticProxyDemo().treat();
 
-        new DynamicProxyDemo().treat();
+//        new DynamicProxyDemo().treat();
+
+        new ObserverDemo().treate();
     }
 
     class LazyThread extends Thread{
