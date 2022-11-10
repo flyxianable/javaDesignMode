@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.RequiresPermission;
+import android.view.autofill.AutofillManager.*;
 
 public abstract class Context {
 
@@ -18,5 +19,14 @@ public abstract class Context {
         throw new RuntimeException("This method is only implemented for Activity-based Contexts. "
                 + "Check canStartActivityForResult() before calling.");
     }
+
+
+
+//    public void setContentCaptureOptions(
+//            @SuppressWarnings("unused") @Nullable ContentCaptureOptions options) {
+//    }
+
+//    public void setAutofillClient(@SuppressWarnings("unused") AutofillClient client) {
+//    }
 
 }

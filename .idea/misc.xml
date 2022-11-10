@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Library/Android/sdk/platforms/android-29/data/res/layout/notification_template_header.xml" value="0.13171225937183384" />
+        <entry key="../../Library/Android/sdk/platforms/android-29/data/res/layout/progress_dialog.xml" value="0.13171225937183384" />
+      </map>
+    </option>
+  </component>
   <component name="FindBugsConfigurable">
     <option name="make" value="true" />
     <option name="effort" value="default" />
