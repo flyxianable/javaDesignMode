@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.lyb.designmode.chain.ChainDemo;
 import com.lyb.designmode.decorate.DecorateDemo;
 import com.lyb.designmode.facade.FacadeDemo;
 import com.lyb.designmode.iterator.IteratorDemo;
@@ -59,7 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
 //        new ObserverDemo().treate();
 
-        new IteratorDemo().treate();
+//        new IteratorDemo().treate();
+
+        new ChainDemo().treat();
+
     }
 
     class LazyThread extends Thread{
