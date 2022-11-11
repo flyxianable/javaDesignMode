@@ -1,5 +1,8 @@
 package com.lyb.designmode.template;
 
+/**
+ * 创建一个抽象类，它的模板方法被设置为 final。
+ */
 public abstract class Game {
 
     abstract void init();

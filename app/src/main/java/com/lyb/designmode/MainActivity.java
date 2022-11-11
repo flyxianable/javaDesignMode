@@ -9,6 +9,7 @@ import com.lyb.designmode.chain.ChainDemo;
 import com.lyb.designmode.decorate.DecorateDemo;
 import com.lyb.designmode.facade.FacadeDemo;
 import com.lyb.designmode.iterator.IteratorDemo;
+import com.lyb.designmode.mediator.MediatorDemo;
 import com.lyb.designmode.observer.ObserverDemo;
 import com.lyb.designmode.proxy.dynamic.DynamicProxyDemo;
 import com.lyb.designmode.proxy.static_proxy.StaticProxyDemo;
@@ -65,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
 //        new ChainDemo().treat();
 
-        new TemplateDemo().treate();
+//        new TemplateDemo().treate();
+
+        new MediatorDemo().treate();
     }
 
     class LazyThread extends Thread{
