@@ -3,7 +3,7 @@ package com.lyb.designmode.chain;
 /**
  * 抽象的处理接口
  */
-public interface Handler {
+public interface Approver {
 
     /**
      * 如果返回Boolean.TRUE，表示处理成功，如果返回Boolean.FALSE，
@@ -12,5 +12,5 @@ public interface Handler {
      * @param request
      * @return
      */
-    Boolean process(Request request);
+    EnumResult process(Request request);
 }

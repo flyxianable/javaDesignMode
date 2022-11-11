@@ -6,10 +6,10 @@ public class ChainDemo {
 
     public void treat(){
 
-        HandleChain chain = new HandleChain();
-        chain.addHandler(new ManagerHandler());
-        chain.addHandler(new VPHandler());
-        chain.addHandler(new CeoHandler());
+        ApproverChain chain = new ApproverChain();
+        chain.addHandler(new ManagerApprover());
+        chain.addHandler(new VPApprover());
+        chain.addHandler(new CeoApprover());
 
         chain.process(new Request("wike", new BigDecimal(500)));
         chain.process(new Request("Charis", new BigDecimal(1000)));
