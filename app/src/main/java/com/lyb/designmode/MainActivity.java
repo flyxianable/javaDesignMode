@@ -14,6 +14,7 @@ import com.lyb.designmode.observer.ObserverDemo;
 import com.lyb.designmode.proxy.dynamic.DynamicProxyDemo;
 import com.lyb.designmode.proxy.static_proxy.StaticProxyDemo;
 import com.lyb.designmode.single_instance.SingleLazyInstance;
+import com.lyb.designmode.state_pattern.StatePatternDemo;
 import com.lyb.designmode.template.TemplateDemo;
 
 public class MainActivity extends AppCompatActivity {
@@ -68,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
 //        new TemplateDemo().treate();
 
-        new MediatorDemo().treate();
+//        new MediatorDemo().treate();
+
+        new StatePatternDemo().treate();
     }
 
     class LazyThread extends Thread{
