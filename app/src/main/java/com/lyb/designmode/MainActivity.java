@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.lyb.designmode.chain.ChainDemo;
+import com.lyb.designmode.command.CommandClient;
+import com.lyb.designmode.command.audio_player.AudioCommandClient;
 import com.lyb.designmode.decorate.DecorateDemo;
 import com.lyb.designmode.facade.FacadeDemo;
 import com.lyb.designmode.iterator.IteratorDemo;
@@ -74,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
 //        new StatePatternDemo().treate();
 
-        new StrategyDemo().treate();
+//        new StrategyDemo().treate();
+
+//        new CommandClient().treate();
+
+        new AudioCommandClient().treate();
     }
 
     class LazyThread extends Thread{
