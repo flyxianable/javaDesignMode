@@ -12,6 +12,20 @@ public class Car {
         }
     }
 
+    /**
+     * 构造者是内部类时，实体的构造方法
+     * @param carBuilder
+     */
+    public Car(CarInnerBuilder carBuilder){
+        if ("紧凑型车".equals(carBuilder.getType())) {
+            this.size = "大小--紧凑型车";
+        } else if ("中型车".equals(carBuilder.getType())) {
+            this.size = "大小--中型车";
+        } else {
+            this.size = "大小--其他";
+        }
+    }
+
 
     // 尺寸
     private String size;
@@ -83,6 +97,54 @@ public class Car {
     public String toString() {
         return "Car [size=" + size + ", steeringWheel=" + steeringWheel + ", pedestal=" + pedestal + ", wheel=" + wheel
                 + ", displacement=" + displacement + ", maxSpeed=" + maxSpeed + "]";
+    }
+
+    static class CarInnerBuilder implements Builder{
+
+        public String getType() {
+            return type;
+        }
+
+        public String getPower() {
+            return power;
+        }
+
+
+        public String getComfort() {
+            return comfort;
+        }
+
+
+        // 车型
+        private String type;
+
+        // 动力
+        private  String power;
+
+        // 舒适性
+        private  String comfort;
+
+        public CarInnerBuilder buildType(String type){
+            this.type = type;
+            return this;
+        }
+
+        public CarInnerBuilder buildPower(String power){
+            this.power = power;
+            return this;
+        }
+
+        public CarInnerBuilder buildComfort(String comfort){
+            this.comfort = comfort;
+            return this;
+        }
+
+        @Override
+        public Car build(){
+
+            return new Car(this);
+        }
+
     }
 
 }
