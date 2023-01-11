@@ -1,4 +1,4 @@
-package com.lyb.designmode.single_instance;
+package com.lyb.designmode.single_instance.java;
 
 /**
  * 饿汉模式

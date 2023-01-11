@@ -1,4 +1,4 @@
-package com.lyb.designmode.single_instance;
+package com.lyb.designmode.single_instance.java;
 
 /**
  * 双重校验安全的懒汉模式
